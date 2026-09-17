@@ -24,7 +24,7 @@ export default function Home() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 sm:h-20">
-            <a href="#hero" className="text-lg sm:text-xl font-bold text-sage-800 hover:text-sage-600 transition-colors">
+            <a href="#hero" className="text-lg sm:text-xl font-display font-bold text-sage-800 hover:text-sage-600 transition-colors">
               SC
             </a>
             <div className="flex gap-4 sm:gap-8 text-sm sm:text-base">
@@ -49,7 +49,7 @@ export default function Home() {
             <p className="text-sage-600 text-sm sm:text-base font-medium mb-4 tracking-wide uppercase animate-fade-in">
               {personalInfo.location} • {personalInfo.languages.join(" / ")}
             </p>
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-sage-900 mb-6 leading-tight animate-fade-in-up">
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-display font-bold text-sage-900 mb-6 leading-tight animate-fade-in-up">
               {personalInfo.name}
             </h1>
             <p className="text-xl sm:text-2xl lg:text-3xl text-sage-700 mb-8 text-balance animate-fade-in-up animation-delay-200">
@@ -87,7 +87,7 @@ export default function Home() {
                 className="text-center animate-fade-in-up"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">{metric.value}</div>
+                <div className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold mb-2">{metric.value}</div>
                 <div className="text-sm sm:text-base text-cream-200">{metric.label}</div>
               </div>
             ))}
@@ -98,7 +98,7 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-sage-900 mb-8 sm:mb-12">About</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-sage-900 mb-8 sm:mb-12">About</h2>
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12">
             <div>
               <p className="text-base sm:text-lg text-sage-700 leading-relaxed mb-6">
@@ -110,7 +110,7 @@ export default function Home() {
               </p>
             </div>
             <div className="bg-sage-50 p-6 sm:p-8 rounded-2xl">
-              <h3 className="text-xl sm:text-2xl font-bold text-sage-900 mb-6">Quick Facts</h3>
+              <h3 className="text-xl sm:text-2xl font-display font-bold text-sage-900 mb-6">Quick Facts</h3>
               <ul className="space-y-4 text-sage-700">
                 <li className="flex items-start">
                   <span className="font-semibold mr-2 min-w-[100px]">Experience:</span>
@@ -137,7 +137,7 @@ export default function Home() {
       {/* Experience Section */}
       <section id="experience" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-cream-100">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-sage-900 mb-8 sm:mb-12">Experience</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-sage-900 mb-8 sm:mb-12">Experience</h2>
           <div className="grid gap-6 sm:gap-8">
             {experience.map((job, index) => (
               <div
@@ -146,7 +146,7 @@ export default function Home() {
               >
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4 gap-2">
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-sage-900 mb-1">{job.role}</h3>
+                    <h3 className="text-xl sm:text-2xl font-display font-bold text-sage-900 mb-1">{job.role}</h3>
                     <p className="text-base sm:text-lg text-sage-700 font-medium">{job.company}</p>
                   </div>
                   <div className="text-sm sm:text-base text-sage-600">
@@ -182,14 +182,14 @@ export default function Home() {
       {/* Capabilities Section */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-sage-900 mb-8 sm:mb-12">Capabilities</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-sage-900 mb-8 sm:mb-12">Capabilities</h2>
           <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
             {capabilities.map((category, index) => (
               <div
                 key={index}
                 className="bg-sage-50 p-6 sm:p-8 rounded-2xl hover:shadow-lg transition-all duration-300"
               >
-                <h3 className="text-xl sm:text-2xl font-bold text-sage-900 mb-6">{category.category}</h3>
+                <h3 className="text-xl sm:text-2xl font-display font-bold text-sage-900 mb-6">{category.category}</h3>
                 <ul className="space-y-3">
                   {category.skills.map((skill, i) => (
                     <li key={i} className="flex items-start text-sage-700">
@@ -207,14 +207,14 @@ export default function Home() {
       {/* Education Section */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-cream-100">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-sage-900 mb-8 sm:mb-12">Education</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-sage-900 mb-8 sm:mb-12">Education</h2>
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
             {education.map((edu, index) => (
               <div
                 key={index}
                 className="bg-cream-50 p-6 sm:p-8 rounded-2xl border border-sage-100"
               >
-                <h3 className="text-xl sm:text-2xl font-bold text-sage-900 mb-2">
+                <h3 className="text-xl sm:text-2xl font-display font-bold text-sage-900 mb-2">
                   {edu.degree}
                 </h3>
                 <p className="text-base sm:text-lg text-sage-700 font-medium mb-1">{edu.field}</p>
@@ -236,7 +236,7 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-sage-900 mb-6 sm:mb-8">Get in Touch</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-sage-900 mb-6 sm:mb-8">Get in Touch</h2>
           <p className="text-lg sm:text-xl text-sage-700 mb-8 sm:mb-12">
             Let's discuss how data-driven marketing can drive your business forward.
           </p>
